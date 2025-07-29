@@ -5,7 +5,7 @@ function Home() {
     <section id="home"
     className='min-h-screen flex items-center justify-center relative'>
         <div className='text-center z-10 px-4'>
-            <h1 className='text-7xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text leading-right text-transparent'>
+            <h1 className='text-7xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text leading-right text-transparent'>
                 Hello! I'm Yassin
             </h1>
             <p className='text-gray-400 text-lg mb-8 max-w-lg mx-auto'>

@@ -24,7 +24,7 @@ function NaveBar({menuOpen ,setMenuOpen}) {
             </div>
 
             <div className='hidden md:flex items-center space-x-8'>
-                <a href='#home' className='text-gray-300 hove:text-white transition-colors'> About </a>
+                <a href='#about' className='text-gray-300 hove:text-white transition-colors'> About </a>
             </div>
 
             <div className='hidden md:flex items-center space-x-8'>
