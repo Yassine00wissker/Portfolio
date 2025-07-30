@@ -28,11 +28,11 @@ function NaveBar({menuOpen ,setMenuOpen}) {
             </div>
 
             <div className='hidden md:flex items-center space-x-8'>
-                <a href='#home' className='text-gray-300 hove:text-white transition-colors'> Projects </a>
+                <a href='#projects' className='text-gray-300 hove:text-white transition-colors'> Projects </a>
             </div>
 
             <div className='hidden md:flex items-center space-x-8'>
-                <a href='#home' className='text-gray-300 hove:text-white transition-colors'> Contact </a>
+                <a href='#contact' className='text-gray-300 hove:text-white transition-colors'> Contact </a>
             </div>
 
 
