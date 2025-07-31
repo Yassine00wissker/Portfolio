@@ -11,10 +11,13 @@ function Contact() {
 
     
     const handelSubmit = (e)=>{
-        event.preventDefault()
+        e.preventDefault()
 
         emailjs
-        .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+        .sendForm(import.meta.env.VITE_SERVICE_ID, 
+            import.meta.env.VITE_TEMPLATE_ID, 
+            e.target, 
+            import.meta.env.VITE_PUBLIC_KEY)
         .then((result) => {
             alert("Message Send");
             setFormData({name: "", email: "", message: ""})
