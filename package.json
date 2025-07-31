@@ -3,6 +3,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "amqplib": "^0.10.8",
     "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "tailwind": "^2.3.1"
   }
 }
