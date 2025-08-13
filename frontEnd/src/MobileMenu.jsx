@@ -1,7 +1,14 @@
 import React, { useEffect } from 'react'
-
+import { useTranslation } from 'react-i18next'
 function MobileMenu({menuOpen ,setMenuOpen}) {
+  const { t } = useTranslation()
 
+  const links = [
+    { name: t('home'), href: '#home' },
+    { name: t('about'), href: '#about' },
+    { name: t('projects'), href: '#projects' },
+    { name: t('contact'), href: '#contact' }
+  ];
 
   return (
     <div className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.78)] z-40 flex flex-col items-center justify-center 
@@ -15,23 +22,12 @@ function MobileMenu({menuOpen ,setMenuOpen}) {
                 aria-label='Close Menu'>
             x
             </button>
-
-            <a href='#home'onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            {t('menu', { returnObjects: true }).map((link, i) => (
+              <a key={i} href={link.href} onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
               ${
                 menuOpen ? "opacity-100 translate-y-0": "opacity-0 translate-y-5"
-              }`}> Home </a>
-            <a href='#about'onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-              ${
-                menuOpen ? "opacity-100 translate-y-0": "opacity-0 translate-y-5"
-              }`}> About </a>
-            <a href='#projects'onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-              ${
-                menuOpen ? "opacity-100 translate-y-0": "opacity-0 translate-y-5"
-              }`}> Projects </a>
-            <a href='#contact'onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-              ${
-                menuOpen ? "opacity-100 translate-y-0": "opacity-0 translate-y-5"
-              }`}> Contact </a>
+              }`}>{link.name}</a>
+            ))}
 
     </div>
   )

@@ -1,0 +1,44 @@
+{
+  "home": {
+    "title": "Bonjour ! Je suis Yassin",
+    "description": "Étudiant en informatique spécialisé dans le développement full-stack, les outils DevOps et les projets d'IA. Actuellement sur des applications réelles.",
+    "viewProjects": "Voir les projets",
+    "contactMe": "Me contacter"
+  },
+  "about": {
+    "aboutMe": "À propos de moi",
+    "aboutParagraph": "🚀 Développeur Full-Stack construisant des applications web intelligentes avec MERN + IA\n🧠 Apprentissage du Machine Learning avec Python et déploiement IA en conditions réelles\n🔨 Actuellement en train de travailler sur un moteur de recommandation de produits basé sur l'IA",
+    "frontend": "FrontEnd",
+    "backend": "BackEnd",
+    "education": "Éducation",
+    "degree": "Licence en développement des systèmes d'information",
+    "school": "ISET Zaghouan (2026)",
+    "workExperience": "Expérience professionnelle",
+    "workTitle": "#######################",
+    "workDescription": "########################### #########"
+  },
+  "projects": {
+    "title": "Projets phares",
+    "project1": {
+      "title": "##################",
+      "description": "#################### ##################### ##################",
+      "tech": ["React", "Nodejs", "AWS", "Docker"],
+      "viewButton": "Voir le projet →"
+    }
+  },
+  "contact": {
+    "title": "Entrer en contact",
+    "namePlaceholder": "Nom...",
+    "emailPlaceholder": "exemple@gmail.com...",
+    "messagePlaceholder": "Votre message...",
+    "sendButton": "Envoyer le message",
+    "alertSuccess": "Message envoyé avec succès !",
+    "alertError": "Une erreur est survenue !"
+  },
+  "menu": [
+  { "name": "Accueil", "href": "#home" },
+  { "name": "À propos", "href": "#about" },
+  { "name": "Projets", "href": "#projects" },
+  { "name": "Contact", "href": "#contact" }
+]
+}

@@ -1,0 +1,44 @@
+{
+  "home": {
+    "title": "Hello! I'm Yassin",
+    "description": "An IT student focused on full-stack development, DevOps tools, and AI projects. Currently working on real-world apps.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "aboutMe": "About Me",
+    "aboutParagraph": "🚀 Full-Stack Developer building smart web apps with MERN + AI\n🧠 Learning Machine Learning with Python & real-world AI deployment\n🔨 Currently working on an AI-powered Product Recommendation Engine",
+    "frontend": "FrontEnd",
+    "backend": "BackEnd",
+    "education": "Education",
+    "degree": "B.S. in Information System Development",
+    "school": "ISET Zaghouan (2026)",
+    "workExperience": "Work Experience",
+    "workTitle": "#######################",
+    "workDescription": "########################### #########"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "project1": {
+      "title": "##################",
+      "description": "#################### ##################### ##################",
+      "tech": ["React", "Nodejs", "AWS", "Docker"],
+      "viewButton": "View Project →"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "namePlaceholder": "Name...",
+    "emailPlaceholder": "example@gmail.com...",
+    "messagePlaceholder": "Your message...",
+    "sendButton": "Send Message",
+    "alertSuccess": "Message sent successfully!",
+    "alertError": "Something went wrong!"
+  },
+  "menu": [
+    { "name": "Home", "href": "#home" },
+    { "name": "About", "href": "#about" },
+    { "name": "Projects", "href": "#projects" },
+    { "name": "Contact", "href": "#contact" }
+  ]
+}

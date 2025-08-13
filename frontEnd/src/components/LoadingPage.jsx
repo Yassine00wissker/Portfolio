@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function LoadingPage({ onComplete }) {
 
     const [text, setText] = useState("")
-    const fullText = "<Hello Word />"
+    const fullText = "<Hello Word />---"
 
     useEffect(() => {
         let index = 0;
