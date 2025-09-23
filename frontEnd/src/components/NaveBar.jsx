@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-
+import logo from '../assets/yy.png';
+import ThemeToggle from './ThemeToggle';
 function NaveBar({ menuOpen, setMenuOpen }) {
   const { t, i18n } = useTranslation();
   useEffect(() => {
@@ -13,14 +14,12 @@ function NaveBar({ menuOpen, setMenuOpen }) {
     localStorage.setItem('lang', lang); // save preference
   };
   return (
-    <nav className='fixed-top top-0 w-full z-40 bg-gray-950 backdrop-blur-lg border-white/10 shadow-lg '>
+    <nav className="fixed top-0 left-0 w-full z-40 bg-gray-950 backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div id='section' className='w-[80%] mx-auto px-6'>
         <div className='flex justify-between items-center h-20'>
           {/* Logo */}
           <a href='#home' className='font-mono text-2xl font-bold text-white'>
-            Yassine
-            <span className='text-blue-500'>.tech</span> </a>
-          
+            <img src={logo} alt="Logo" className="h-16 mt-3 rounded-full" /></a>
 
           <div className='w-7 h-5 relative cursor-pointer text-2xl left-10 z-40 md:hidden' onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
             &#9776;
@@ -31,7 +30,7 @@ function NaveBar({ menuOpen, setMenuOpen }) {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-2xl">
             {t('menu', { returnObjects: true }).map((link, i) => (
-              <a key={i} href={link.href}>{link.name}</a>
+              <a className='text-white hover:text-gray-400 transition ' key={i} href={link.href}>{link.name}</a>
             ))}
           </div>
           {/* Language Selector */}
@@ -44,8 +43,7 @@ function NaveBar({ menuOpen, setMenuOpen }) {
             <option value="fr">FR</option>
             <option value="ar">AR</option>
           </select>
-
-
+          <ThemeToggle />
         </div>
       </div>
     </nav>

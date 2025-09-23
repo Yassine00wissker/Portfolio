@@ -1,92 +1,73 @@
-import React from 'react'
-import RevealOnScroll from '../RevealOnScroll'
-import { useTranslation } from 'react-i18next'
+import React from 'react';
+import { 
+  FaNodeJs, FaDocker, FaGitAlt, FaJs, FaFigma 
+} from 'react-icons/fa';
+import { 
+  SiMongodb, SiMysql, SiTypescript, SiPostgresql, SiJenkins, 
+  SiFastapi, SiPython, SiBootstrap, SiTailwindcss, SiGithub,
+  SiExpress, SiHtml5, SiCss3, 
+} from 'react-icons/si';
+
+const icons = [
+  <SiMongodb size={40} color="#4DB33D"/>,
+  <SiMysql size={40} color="#4479A1"/>,
+  <SiPostgresql size={40} color="#336791"/>,
+  <FaNodeJs size={40} color="#339933"/>,
+  <FaDocker size={40} color="#0db7ed"/>,
+  <SiJenkins size={40} color="#D24939"/>,
+  <FaGitAlt size={40} color="#F05032"/>,
+  <FaJs size={40} color="#F7DF1E"/>,
+  <SiTypescript size={40} color="#3178C6"/>,
+  <SiFastapi size={40} color="#009688"/>,
+  <SiPython size={40} color="#306998"/>,
+  <SiBootstrap size={40} color="#7952B3"/>,
+  <SiTailwindcss size={40} color="#38B2AC"/>,
+  <SiGithub size={40} color="white"/>,
+  <SiExpress size={40} color="white"/>,
+  <SiHtml5 size={40} color="#E34F26"/>,
+  <SiCss3 size={40} color="#1572B6"/>
+];
 
 function About() {
-    const { t } = useTranslation();
-
-    const fontendSkills = [
-        "React",
-        "TypeScript",
-        "Angular",
-        "Tailwind",
-        "Bootstrap",
-    ]
-    const backendSkills = [
-        "Node.js",
-        "Python",
-        "MongoDB",
-        "MySQL",
-
-    ]
-
-    return (
-        <section id="about"
-            className='min-h-screen flex items-center justify-center py-20'>
-            <RevealOnScroll>
-                <div className='max-w-3xl mx-auto px-4'>
-                    <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>
-                        {t('aboutMe')}
-                    </h2>
-                    <div className='glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all'>
-                        <p>
-                            {t('aboutParagraph')}
-                        </p>
-
-                        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                                {/* Frontend */}
-                            <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-                                <h3 className='text-xl font-bold mb-4'>{t('frontend')}</h3>
-                                <div className='flex flex-wrap gap-2'>
-                                    {fontendSkills.map((tech, key) => (
-                                        <span key={key} className='bg-blue-500/10 text-blue-500 px-3 rounded-full py-1 text-sm hover:bg-blue-500/20
-                                hover:shadow-[0_2px_8px_rgba(50,130,2246,0.2)] transition' >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-              {/* Backend */}
-                            <div className='rounded-xl p-6 hover:-translate-y-1 transition-all'>
-                                <h3 className='text-xl font-bold mb-4'>{t('backend')}</h3>
-                                <div className='flex flex-wrap gap-2'>
-                                    {backendSkills.map((tech, key) => (
-                                        <span key={key} className='bg-blue-500/10 text-blue-500 px-3 rounded-full py-1 text-sm hover:bg-blue-500/20
-                                hover:shadow-[0_2px_8px_rgba(50,130,2246,0.2)] transition' >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8' >
-                        <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
-                            <h3 className='text-xl font-bold mb-4'> {t('education')} </h3>
-                            <ul className='list-disc list-inside text-gray-300 space-y-2'>
-                                <li>
-                                    <strong>{t('degree')}</strong>- {t('school')}
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all'>
-                            <h3 className='text-xl font-bold mb-4'> {t('workExperience')} </h3>
-                            <div className='text-gray-300 space-y-4'>
-                                <div>
-                                    <h4>{t('workTitle')}</h4>
-                                    <p>{t('workDescription')}
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </RevealOnScroll>
-        </section>
-    )
+  return (
+    <section className="py-10 bg-gray-950 overflow-hidden" id='about'>
+      <div className="marquee">
+        <div className="marquee__inner">
+          {[...icons, ...icons].map((icon, i) => (
+            <div key={i} className="icon">{icon}</div>
+          ))}
+        </div>
+      </div>
+      
+      <style jsx>{`
+        .marquee {
+          overflow: hidden;
+          width: 100%;
+        }
+        .marquee__inner {
+          display: flex;
+          width: fit-content;
+          animation: scroll 17s linear infinite;
+        }
+        .icon {
+          flex-shrink: 0;
+          margin-right: 4rem;
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        /* Pause on hover */
+        .marquee:hover .marquee__inner {
+          animation-play-state: paused;
+        }
+      `}</style>
+    </section>
+  );
 }
 
-export default About
+export default About;
