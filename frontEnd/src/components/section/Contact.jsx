@@ -33,10 +33,13 @@ function Contact() {
     return (
         <section id='contact' className='min-h-screen flex items-center justify-center relative'>
             <RevealOnScroll>
-                <div className='px-4 w-150'>
-                    <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>
+                <div className='px-4 w-full max-w-xl mx-auto'>
+                    <h2 className='text-3xl md:text-4xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent text-center'>
                         {t("contact.title")}
                     </h2>
+                    <p className="text-center text-gray-400 mb-8 text-sm md:text-base">
+                        {t("contact.subtitle")}
+                    </p>
                     <form className='space-y-6' onSubmit={handelSubmit}>
                         <div className='relative'>
                             <input

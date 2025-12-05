@@ -1,8 +1,9 @@
 {
   "home": {
-    "title": "Bonjour ! Je suis Yassin",
-    "description": "Je suis un développeur Full Stack passionné par la création d’applications web modernes, évolutives et centrées sur l’utilisateur. Animé par un fort intérêt pour les technologies émergentes telles que l’intelligence artificielle et le cloud computing, je m’efforce de proposer des solutions innovantes, efficaces et prêtes pour l’avenir.",
-    "viewProjects": "Voir les projets",
+    "title": "Bonjour ! Je suis Yassine",
+    "badge": "Développeur Full‑Stack & passionné d’IA",
+    "description": "Développeur Full Stack et futur Ingénieur en Intelligence Artificielle, passionné par l’intégration de l’IA dans les systèmes web modernes. Actuellement en train d’approfondir mes compétences en développement d’IA, je me concentre sur la création d’applications intelligentes, évolutives et centrées sur l’utilisateur. Mon objectif est de relier le développement web et l’innovation en intelligence artificielle afin de concevoir des solutions numériques performantes et prêtes pour l’avenir.",
+    "viewProjects": "Voir mes projets",
     "contactMe": "Me contacter"
   },
   "about": {
@@ -19,15 +20,29 @@
   },
   "projects": {
     "title": "Projets phares",
+    "subtitle": "Une sélection de projets Full‑Stack et orientés IA que j’ai réalisés récemment.",
     "project1": {
-      "title": "##################",
-      "description": "#################### ##################### ##################",
-      "tech": ["React", "Nodejs", "AWS", "Docker"],
+      "title": "EMS – Employee Management System",
+      "description": "Un système complet de gestion des employés (EMS) avec authentification, CRUD des employés, gestion des départements, rôles et permissions, construit avec le stack MERN.",
+      "tech": ["MongoDB", "Express", "React", "Node.js"],
+      "viewButton": "Voir le projet →"
+    },
+    "project2": {
+      "title": "SkillPath – Plateforme d’orientation et de formation",
+      "description": "SkillPath aide les utilisateurs à découvrir des parcours académiques et professionnels adaptés grâce à un système de recommandation basé sur l’IA, avec un tableau de bord admin pour gérer les formations, catégories et parcours.",
+      "tech": ["FastAPI", "React", "Tailwind CSS", "MySQL"],
+      "viewButton": "Voir le projet →"
+    },
+    "project3": {
+      "title": "MERNStore – Application e‑commerce",
+      "description": "MERNStore est une application e‑commerce complète avec listes de produits, catégories, authentification utilisateur, panier, paiement, commandes et panneau d’administration pour gérer les produits et utilisateurs.",
+      "tech": ["MongoDB", "Express", "React", "Node.js", "Bootstrap"],
       "viewButton": "Voir le projet →"
     }
   },
   "contact": {
     "title": "Entrer en contact",
+    "subtitle": "Un projet, une opportunité ou une question ? N’hésitez pas à m’écrire et je vous répondrai dès que possible.",
     "namePlaceholder": "Nom...",
     "emailPlaceholder": "exemple@gmail.com...",
     "messagePlaceholder": "Votre message...",

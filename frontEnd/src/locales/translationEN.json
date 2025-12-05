@@ -1,7 +1,8 @@
 {
   "home": {
     "title": "Hello! I'm Yassin",
-    "description": "I am a Full Stack Developer dedicated to creating modern, scalable, and user-focused web applications. With a strong interest in emerging technologies such as Artificial Intelligence and Cloud computing, I strive to deliver innovative solutions that are both efficient and future-ready.",
+    "badge": "Full-Stack Developer & AI Enthusiast",
+    "description": "A Full Stack Developer and aspiring AI Engineer with a strong passion for integrating artificial intelligence into modern web systems. Currently expanding my expertise in AI development, I focus on building scalable, intelligent, and user-centric applications. My goal is to bridge the gap between web development and AI innovation to deliver efficient, future-ready digital solutions.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me"
   },
@@ -19,15 +20,29 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "subtitle": "A selection of full‑stack and AI‑driven projects I've built recently.",
     "project1": {
-      "title": "##################",
-      "description": "#################### ##################### ##################",
-      "tech": ["React", "Nodejs", "AWS", "Docker"],
+      "title": "EMS – Employee Management System",
+      "description": "A complete Employee Management System (EMS) with authentication, employee CRUD, department management, roles, and permissions built using the MERN stack.",
+      "tech": ["MongoDB", "Express", "React", "Node.js"],
+      "viewButton": "View Project →"
+    },
+    "project2": {
+      "title": "SkillPath – Career & Learning Guidance Platform",
+      "description": "SkillPath helps users discover suitable academic and career paths using AI keyword matching, with an admin dashboard to manage trainings, categories, and career paths.",
+      "tech": ["FastAPI", "React", "Tailwind CSS", "MySQL"],
+      "viewButton": "View Project →"
+    },
+    "project3": {
+      "title": "MERNStore – E‑commerce Web App",
+      "description": "MERNStore is a full‑featured e‑commerce application with product listings, categories, user authentication, cart and checkout flow, orders, and an admin dashboard to manage products and users.",
+      "tech": ["MongoDB", "Express", "React", "Node.js", "Bootstrap"],
       "viewButton": "View Project →"
     }
   },
   "contact": {
     "title": "Get In Touch",
+    "subtitle": "Have a project in mind, an opportunity, or just a question? Feel free to reach out and I’ll get back to you as soon as possible.",
     "namePlaceholder": "Name...",
     "emailPlaceholder": "example@gmail.com...",
     "messagePlaceholder": "Your message...",
