@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import RevealOnScroll from '../RevealOnScroll'
 import { useTranslation } from 'react-i18next'
 
