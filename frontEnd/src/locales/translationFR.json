@@ -8,15 +8,62 @@
   },
   "about": {
     "aboutMe": "À propos de moi",
-    "aboutParagraph": "🚀 Développeur Full-Stack construisant des applications web intelligentes avec MERN + IA\n🧠 Apprentissage du Machine Learning avec Python et déploiement IA en conditions réelles\n🔨 Actuellement en train de travailler sur un moteur de recommandation de produits basé sur l'IA",
+    "bioSummary": "Je suis un développeur passionné, dédié à la création de solutions logicielles innovantes qui font le pont entre le développement web moderne et l'intelligence artificielle.",
+    "focusAreasTitle": "Domaines d'expertise et initiatives",
+    "focusAreas": [
+      {
+        "icon": "🚀",
+        "title": "Développement Full-Stack",
+        "description": "Conception d'applications web intelligentes et évolutives en fusionnant la stack MERN avec des technologies de pointe."
+      },
+      {
+        "icon": "🧠",
+        "title": "IA et Machine Learning",
+        "description": "Approfondissement de mon expertise en Machine Learning, Python et déploiement de solutions d'IA en conditions réelles."
+      },
+      {
+        "icon": "🔨",
+        "title": "Produits basés sur l'IA",
+        "description": "Conception d'un moteur de recommandation de produits avancé et basé sur l'IA pour des expériences personnalisées."
+      },
+      {
+        "icon": "☁️",
+        "title": "Cloud et DevOps",
+        "description": "Mise en place de pipelines CI/CD, conteneurisation Docker et déploiement d'architectures évolutives."
+      }
+    ],
     "frontend": "FrontEnd",
     "backend": "BackEnd",
     "education": "Éducation",
     "degree": "Licence en développement des systèmes d'information",
     "school": "ISET Zaghouan (2026)",
     "workExperience": "Expérience professionnelle",
-    "workTitle": "#######################",
-    "workDescription": "########################### #########"
+    "experiences": [
+      {
+        "title": "Développeur Freelance",
+        "company": "À distance / Collaboration d'équipe",
+        "date": "07/2025 – 10/2025 | Tunis",
+        "tasks": [
+          "Travail avec un groupe de freelances sur des tâches pour des projets à grande échelle et des plateformes SaaS.",
+          "Contribution au développement frontend et backend selon les exigences du projet.",
+          "Création et maintenance de fonctionnalités utilisant des technologies web modernes telles que React, Node.js, FastAPI et MongoDB.",
+          "Collaboration avec les développeurs, respect des délais et livraison efficace des tâches assignées.",
+          "Participation au débogage, à l'intégration d'API, aux tests et à l'amélioration des performances.",
+          "Adaptation rapide aux différents besoins des clients et environnements de projet."
+        ]
+      },
+      {
+        "title": "Stagiaire en Développement Web",
+        "company": "Karriery Dev",
+        "date": "02/2025 – 01/2025",
+        "tasks": [
+          "Participation au développement d’applications web au sein d’une équipe utilisant la stack MERN (MongoDB, Express, React, Node.js).",
+          "Observation et compréhension du cycle complet de développement : conception, implémentation, tests et déploiement.",
+          "Réalisation de tâches liées à l’intégration d’API et à la communication entre les interfaces front-end et back-end.",
+          "Familiarisation avec les bonnes pratiques de développement collaboratif."
+        ]
+      }
+    ]
   },
   "projects": {
     "title": "Projets phares",

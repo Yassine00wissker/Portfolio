@@ -8,15 +8,62 @@
   },
   "about": {
     "aboutMe": "About Me",
-    "aboutParagraph": "🚀 Full-Stack Developer building smart web apps with MERN + AI\n🧠 Learning Machine Learning with Python & real-world AI deployment\n🔨 Currently working on an AI-powered Product Recommendation Engine",
+    "bioSummary": "I am a passionate developer dedicated to building innovative software solutions that bridge the gap between modern web development and artificial intelligence.",
+    "focusAreasTitle": "Current Focus & Initiatives",
+    "focusAreas": [
+      {
+        "icon": "🚀",
+        "title": "Full-Stack Development",
+        "description": "Crafting intelligent, scalable web applications by merging the MERN stack with cutting-edge technologies."
+      },
+      {
+        "icon": "🧠",
+        "title": "AI & Machine Learning",
+        "description": "Deepening expertise in Machine Learning, Python, and the deployment of real-world AI solutions."
+      },
+      {
+        "icon": "🔨",
+        "title": "AI-Powered Products",
+        "description": "Engineering an advanced, AI-powered Product Recommendation Engine for personalized user experiences."
+      },
+      {
+        "icon": "☁️",
+        "title": "Cloud & DevOps",
+        "description": "Implementing CI/CD pipelines, Docker containerization, and deploying scalable architectures."
+      }
+    ],
     "frontend": "FrontEnd",
     "backend": "BackEnd",
     "education": "Education",
     "degree": "B.S. in Information System Development",
     "school": "ISET Zaghouan (2026)",
     "workExperience": "Work Experience",
-    "workTitle": "#######################",
-    "workDescription": "########################### #########"
+    "experiences": [
+      {
+        "title": "Freelance Developer",
+        "company": "Remote / Team Collaboration",
+        "date": "07/2025 – 10/2025 | Tunis",
+        "tasks": [
+          "Worked with a freelance group on tasks for large-scale projects and SaaS platforms.",
+          "Contributed to frontend and backend development based on project requirements.",
+          "Built and maintained features using modern web technologies such as React, Node.js, FastAPI, and MongoDB.",
+          "Collaborated with developers, followed deadlines, and delivered assigned tasks efficiently.",
+          "Participated in debugging, API integration, testing, and performance improvements.",
+          "Adapted quickly to different client needs and project environments."
+        ]
+      },
+      {
+        "title": "Web Development Intern",
+        "company": "Karriery Dev",
+        "date": "02/2025 – 01/2025",
+        "tasks": [
+          "Participated in the development of web applications within a team using the MERN stack (MongoDB, Express, React, Node.js).",
+          "Observed and understood the full development cycle: design, implementation, testing, and deployment.",
+          "Performed tasks related to API integration and communication between frontend and backend interfaces.",
+          "Familiarized with collaborative development best practices."
+        ]
+      }
+    ]
   },
   "projects": {
     "title": "Featured Projects",

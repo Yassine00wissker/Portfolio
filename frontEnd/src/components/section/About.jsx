@@ -57,13 +57,31 @@ function About() {
           {/* Bio + Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
 
-            {/* Bio lines */}
-            <div className="space-y-4">
-              {t('about.aboutParagraph').split('\n').map((line, i) => (
-                <p key={i} className="text-gray-300 leading-relaxed text-sm md:text-base">
-                  {line}
-                </p>
-              ))}
+            {/* Bio and Focus Areas */}
+            <div className="flex flex-col gap-6">
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base bg-blue-500/5 p-5 rounded-2xl border border-blue-500/10">
+                {t('about.bioSummary')}
+              </p>
+              
+              <div className="space-y-4">
+                <h3 className="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                  <span className="w-4 h-px bg-blue-500/50 inline-block" />
+                  {t('about.focusAreasTitle')}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {t('about.focusAreas', { returnObjects: true })?.map?.((focus, i) => (
+                    <div key={i} className="flex flex-col gap-2 p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-500/40 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(59,130,246,0.1)] transition-all duration-300 group">
+                      <div className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all">
+                        {focus.icon}
+                      </div>
+                      <div>
+                        <h4 className="text-gray-200 text-sm font-bold mb-1.5 group-hover:text-blue-300 transition-colors">{focus.title}</h4>
+                        <p className="text-gray-400 text-xs leading-relaxed">{focus.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Education + Work cards */}
@@ -80,14 +98,26 @@ function About() {
               </div>
 
               <div className="p-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-500/30 transition-all">
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-4">
                   <span className="text-lg">💼</span>
                   <h3 className="text-xs font-semibold text-white uppercase tracking-widest">
                     {t('about.workExperience')}
                   </h3>
                 </div>
-                <p className="text-gray-200 text-sm font-medium">{t('about.workTitle')}</p>
-                <p className="text-gray-500 text-xs mt-1">{t('about.workDescription')}</p>
+                <div className="space-y-6">
+                  {t('about.experiences', { returnObjects: true })?.map?.((exp, index) => (
+                    <div key={index} className="relative pl-4 border-l-2 border-blue-500/30">
+                      <div className="absolute w-2 h-2 bg-blue-500 rounded-full -left-[5px] top-1.5 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+                      <h4 className="text-gray-200 text-sm font-bold">{exp.title}</h4>
+                      <p className="text-blue-400 text-xs mt-0.5">{exp.company} • {exp.date}</p>
+                      <ul className="mt-2 space-y-1.5">
+                        {exp.tasks?.map?.((task, i) => (
+                          <li key={i} className="text-gray-400 text-xs list-disc ml-3 leading-relaxed">{task}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
