@@ -111,9 +111,9 @@ function NaveBar({ menuOpen, setMenuOpen }) {
             defaultValue={i18n.language}
             className="hidden md:block bg-black hover:bg-black/10 text-white border border-white/10 rounded-lg px-2 py-1 text-xs cursor-pointer transition-colors focus:outline-none focus:border-blue-500/40"
           >
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="ar">AR</option>
+            <option className="bg-black text-white" value="en">EN</option>
+            <option className="bg-black text-white" value="fr">FR</option>
+            <option className="bg-black text-white" value="ar">AR</option>
           </select>
         </div>
       </div>
