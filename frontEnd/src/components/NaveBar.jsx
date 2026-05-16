@@ -109,7 +109,7 @@ function NaveBar({ menuOpen, setMenuOpen }) {
           <select
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}
-            className="hidden md:block bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-lg px-2 py-1 text-xs cursor-pointer transition-colors focus:outline-none focus:border-blue-500/40"
+            className="hidden md:block bg-black hover:bg-black/10 text-white border border-white/10 rounded-lg px-2 py-1 text-xs cursor-pointer transition-colors focus:outline-none focus:border-blue-500/40"
           >
             <option value="en">EN</option>
             <option value="fr">FR</option>
