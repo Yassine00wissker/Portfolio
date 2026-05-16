@@ -46,7 +46,9 @@ function Contact() {
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.VITE_PUBLIC_KEY
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
       )
       .then(() => {
         showToast(t('contact.alertSuccess', "Message sent! I'll get back to you soon."), 'success')

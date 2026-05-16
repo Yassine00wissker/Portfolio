@@ -82,8 +82,14 @@
     },
     "project3": {
       "title": "MERNStore – Application e‑commerce",
-      "description": "MERNStore est une application e‑commerce complète avec listes de produits, catégories, authentification utilisateur, panier, paiement, commandes et panneau d’administration pour gérer les produits et utilisateurs.",
+      "description": "MERNStore est une application e‑commerce complète avec listes de produits, catégories, authentification utilisateur, panier, paiement, commandes et panneau d'administration pour gérer les produits et utilisateurs.",
       "tech": ["MongoDB", "Express", "React", "Node.js", "Bootstrap"],
+      "viewButton": "Voir le projet →"
+    },
+    "project4": {
+      "title": "Voxora AI – Plateforme de création de contenu IA",
+      "description": "Une plateforme de création de contenu propulsée par l'IA qui aide les utilisateurs à générer des scripts, convertir la parole en texte et créer des voix off réalistes. Intègre des services d'IA modernes pour la génération de texte, la reconnaissance vocale et la synthèse vocale avec une interface réactive et conviviale.",
+      "tech": ["Services IA", "Reconnaissance vocale", "Synthèse vocale", "React", "Node.js"],
       "viewButton": "Voir le projet →"
     }
   },

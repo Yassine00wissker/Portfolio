@@ -32,6 +32,15 @@ const projectMeta = {
       'https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=1000&q=80',
     ],
   },
+  project4: {
+    category: 'AI / Web',
+    link: '#',
+    github: 'https://github.com/Yahyaoui-Yassin',
+    images: [
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1531746790095-e5cb1574e334?auto=format&fit=crop&w=1000&q=80',
+    ],
+  },
 }
 
 // GitHub SVG icon
@@ -46,7 +55,7 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
   const [activeFilter, setActiveFilter] = useState('All')
 
-  const projectKeys = ['project1', 'project2', 'project3']
+  const projectKeys = ['project1', 'project2', 'project3', 'project4']
 
   const projects = projectKeys.map((key) => ({
     key,

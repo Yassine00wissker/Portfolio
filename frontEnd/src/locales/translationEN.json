@@ -85,6 +85,12 @@
       "description": "MERNStore is a full‑featured e‑commerce application with product listings, categories, user authentication, cart and checkout flow, orders, and an admin dashboard to manage products and users.",
       "tech": ["MongoDB", "Express", "React", "Node.js", "Bootstrap"],
       "viewButton": "View Project →"
+    },
+    "project4": {
+      "title": "Voxora AI – AI Content Creation Platform",
+      "description": "An AI-powered content creation platform that helps users generate scripts, convert speech to text, and create realistic AI voice-overs. Integrates modern AI services for text generation, speech recognition, and voice synthesis with a responsive, user-friendly interface.",
+      "tech": ["AI Services", "Speech Recognition", "Voice Synthesis", "React", "Node.js"],
+      "viewButton": "View Project →"
     }
   },
   "contact": {

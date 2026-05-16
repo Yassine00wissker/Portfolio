@@ -71,7 +71,7 @@ function App() {
             {/* Social links */}
             <div className="flex items-center gap-5">
               <a
-                href="https://github.com/"
+                href="https://github.com/Yassine00wissker"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -82,7 +82,7 @@ function App() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/yassin-yahyaoui-8129632ab/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -93,7 +93,7 @@ function App() {
                 </svg>
               </a>
               <a
-                href="mailto:you@email.com"
+                href="yassineyahyaoui40@email.com"
                 aria-label="Email"
                 className="text-gray-500 hover:text-white transition-colors"
               >
