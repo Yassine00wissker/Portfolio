@@ -50,7 +50,7 @@ function App() {
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow" />
         <div className="absolute top-[40%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none animate-float-delayed" />
         <div className="absolute bottom-[-10%] left-[20%] w-[35%] h-[35%] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-float" />
-        
+
         <NaveBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
@@ -62,7 +62,7 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-white/10 mt-16 py-8 backdrop-blur">
+        <footer className="border-t border-white/10 mt-16 py-8 backdrop-blur ">
           <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">
               &copy; {new Date().getFullYear()} Yahyaoui. All rights reserved.
@@ -104,7 +104,6 @@ function App() {
             </div>
           </div>
         </footer>
-
         <ScrollToTop />
       </div>
     </>
